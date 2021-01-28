@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="740dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:inputType="none"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Available Museums"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/textModernArtMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="-10dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Museum of Modern Art" />
+
+
+        <ImageButton
+            android:id="@+id/museumOfModernArt"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-12dp"
+            android:paddingBottom="80dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/museumofmodernart" />
+
+        <EditText
+            android:id="@+id/textNaturalHistoryMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center"
+            android:text="Museum of Natural History" />
+
+        <ImageButton
+            android:id="@+id/naturalHistoryMuseumButton"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/museumofnaturalhistory"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/textContemporaryMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center"
+            android:text="New Museum of Contemporary Art"/>
+
+        <ImageButton
+            android:id="@+id/contemporaryMuseumButton"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-12dp"
+            android:background="@drawable/newmuseumofcontemporaryart"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/textMetropolitanMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-13dp"
+            android:gravity="center"
+            android:text="Metropolitan Museum" />
+
+        <ImageButton
+            android:id="@+id/MetropolitanMuseumButton"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="-12dp"
+            android:background="@drawable/metropolitanmuseum"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
